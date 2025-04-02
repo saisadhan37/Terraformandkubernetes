@@ -109,6 +109,8 @@ variable "instance_type" {
   type        = string
   default     = "t2.micro"
 }
+
+
 variable "instance_type": Declares a variable named instance_type.
 description: Provides a helpful explanation of the variable's purpose.
 type: Specifies the expected data type of the variable (e.g., string, number, bool).
@@ -122,6 +124,8 @@ resource "aws_instance" "example" {
   ami           = "ami-0c55b159cbfafe1f0"
   instance_type = var.instance_type
 }
+
+
 Here, var.instance_type references the value of the instance_type variable.
 
 🛠 Assigning Values to Variables
@@ -224,6 +228,8 @@ variable "instance_type" {
   type        = string
   default     = "t2.micro"
 }
+
+
 variable "instance_type": Declares a variable named instance_type.
 description: Provides a helpful explanation of the variable's purpose.
 type: Specifies the expected data type of the variable (e.g., string, number, bool).
@@ -237,6 +243,8 @@ resource "aws_instance" "example" {
   ami           = "ami-0c55b159cbfafe1f0"
   instance_type = var.instance_type
 }
+
+
 Here, var.instance_type references the value of the instance_type variable.
 
 🛠 Assigning Values to Variables
@@ -292,6 +300,8 @@ resource "azurerm_resource_group" "example" {
   name     = "terraform-rg"
   location = "East US"
 }
+
+
 provider "azurerm": Configures the AzureRM provider. The features {} block is often required for AzureRM.
 resource "azurerm_resource_group" "example": Defines an Azure Resource Group.
 Initializing for Multiple Providers
