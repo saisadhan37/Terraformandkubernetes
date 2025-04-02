@@ -26,38 +26,39 @@ Terraform is an **Infrastructure as Code (IaC)** tool by HashiCorp that allows y
 
 Terraform can be installed on Linux, Mac, and Windows using the following methods:
 
-#### 🔹 Windows (via Chocolatey)
+###################################
 
-```sh
-choco install terraform
+ 🔹 Windows (via Chocolatey)
+
+   choco install terraform
 
 🔹 Mac (via Homebrew)
-Bash
-
-brew tap hashicorp/tap
-brew install hashicorp/tap/terraform
+  brew tap hashicorp/tap
+  brew install hashicorp/tap/terraform
+  
 🔹 Linux (via apt)
-Bash
-
-sudo apt-get update && sudo apt-get install -y terraform
+   sudo apt-get update && sudo apt-get install -y terraform
+   
 ✅ Verify Installation
+
 After installation, verify that Terraform is correctly installed by running the following command in your terminal:
 
-Bash
 
 terraform -version
 You should see output similar to this (the version number might be different):
 
 Terraform v1.5.0
+
+##################################
+
 3️⃣ Writing Your First Terraform Configuration
 Now, let's deploy a simple AWS EC2 instance using Terraform.
 
 📄 Create a Terraform File (main.tf)
 Create a new directory for your Terraform project and navigate into it:
 
-Bash
+ mkdir terraform-project && cd terraform-project
 
-mkdir terraform-project && cd terraform-project
 Create an empty file named main.tf:
 
 Bash
@@ -82,6 +83,7 @@ resource "aws_instance" "example": This block defines an AWS EC2 instance resour
 "example": A local name you give to this resource within your Terraform configuration.
 ami = "ami-0c55b159cbfafe1f0": The Amazon Machine Image (AMI) ID to use for the instance (Amazon Linux 2 in this case).
 instance_type = "t2.micro": The instance type for the EC2 instance.
+
 4️⃣ Running Terraform Commands
 Now, let's initialize and apply the configuration:
 
