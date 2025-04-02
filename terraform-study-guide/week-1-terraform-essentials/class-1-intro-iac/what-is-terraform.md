@@ -132,5 +132,3 @@ Terraform will again show you a plan of what will be destroyed and ask for confi
 
 ✅ Deployed an AWS EC2 instance using Terraform.
 
-
-This Markdown content is ready to be added to a `.md` file within your Git repository, specifically under a `week-1-terraform-essentials/class-1-intro-iac/` directory with a filename like `introduction.md`. You can further break down the content into more specific files if you prefer (e.g., `what-is-terraform.md`, `installation.md`, `first-configuration.md`, `terraform-commands.md`, `hands-on-ec2.md`). Choose the structure that best suits your learning style and the overall organization of your study guide.
